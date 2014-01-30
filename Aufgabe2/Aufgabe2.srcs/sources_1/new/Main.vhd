@@ -2,9 +2,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity Main is
-    Port ( CLK_66MHZ : in STD_LOGIC;
-           USER_RESET : in STD_LOGIC;
-           LED : out STD_LOGIC_VECTOR (3 downto 0));
+	Port(
+		CLK_66MHZ: in STD_LOGIC;
+		USER_RESET: in STD_LOGIC;
+		LED: out STD_LOGIC_VECTOR (3 downto 0)
+	);
 end Main;
 
 architecture Behavioral of Main is
@@ -39,7 +41,7 @@ architecture Behavioral of Main is
 		);
 	end component;
 	
-	signal slowClk: std_logic;
+	signal CLK_1HZ: std_logic;
 	signal pwmDutyCycle: std_logic_vector (7 downto 0);
 begin
 	clockDivider1: ClockDivider generic map (
@@ -47,13 +49,13 @@ begin
 	) port map (
 		clk  => CLK_66MHZ,
 		res   => USER_RESET,
-		clk_out => slowClk
+		clk_out => CLK_1HZ
 	);
 	
 	counter1: Counter generic map (
 		width => 3
 	) port map (
-		clk => slowClk,
+		clk => CLK_1HZ,
 		res => USER_RESET,
 		cout => pwmDutyCycle(7 downto 5)
 	);

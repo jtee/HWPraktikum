@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb1/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/ledout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ledout[0:3]</obj_property>
+      <obj_property name="ObjectShortName">ledout[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/sda" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/scl" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/uut/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/uut/i2c_controller/statemachine/c_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">c_state</obj_property>
+      <obj_property name="ObjectShortName">c_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/uut/dutycycle" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dutycycle[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dutycycle[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/uut/i2c_al" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i2c_al</obj_property>
+      <obj_property name="ObjectShortName">i2c_al</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/adc/adr_phase" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adr_phase</obj_property>
+      <obj_property name="ObjectShortName">adr_phase</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/adc/op_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">op_read</obj_property>
+      <obj_property name="ObjectShortName">op_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/adc/initialized" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">initialized</obj_property>
+      <obj_property name="ObjectShortName">initialized</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/adc/adr_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adr_match</obj_property>
+      <obj_property name="ObjectShortName">adr_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb1/adc/data_phase" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_phase</obj_property>
+      <obj_property name="ObjectShortName">data_phase</obj_property>
+   </wvobject>
+</wave_config>

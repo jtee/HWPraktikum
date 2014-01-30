@@ -14,32 +14,32 @@ architecture Behavioral of Main_tb is
 	end component;
 	
 	-- Inputs
-	signal clk: std_logic := '0';
+	signal clk66: std_logic := '0';
 	signal reset: std_logic := '0';
 
-	constant clk_period: time := 15 ns;
+	constant clk66_period: time := 15 ns;
 
 	-- Outputs
 	signal ledOut: std_logic_vector (3 downto 0); 
 begin
 	uut: Main port map (
-		CLK_66MHZ  => clk,
+		CLK_66MHZ  => clk66,
 		USER_RESET   => reset,
 		LED => ledOut
 	);
 
-	clock_process :process
+	clock66_process :process
 	begin
-		clk <= '0';
-		wait for clk_period / 2;
-		clk <= '1';
-		wait for clk_period / 2;
+		clk66 <= '0';
+		wait for clk66_period / 2;
+		clk66 <= '1';
+		wait for clk66_period / 2;
 	end process;
 
 	stimuli: process
 	begin
 		reset <= '1';
-		wait for clk_period * 2;
+		wait for clk66_period * 2;
 		reset <= '0';
         wait;
 	end process;
